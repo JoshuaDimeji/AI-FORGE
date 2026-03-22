@@ -12,7 +12,7 @@ Requirements:
 
 to_do_list = []   # empty list to save the tasks
 
-def add_tasks():
+def add_tasks():    # function to add task
     while True:
         task = input("Enter the task to add: ")     # Requests task to add
         to_do_list.append(task)             # adds the task to the list
@@ -24,7 +24,7 @@ def add_tasks():
             break
 
 
-def view_tasks():
+def view_tasks():                # function to view tasks
     if len(to_do_list) == 0:        # checks the length of the list. If it's zero, then it's an empty list
         print("No tasks added!")
     else:
@@ -34,8 +34,8 @@ def view_tasks():
             print(i, "-", task)     # for loop to iterate and show the items in the list
             i += 1
 
-def delete_tasks():
-    if len(to_do_list) == 0:
+def delete_tasks():                # function to delete tasks
+    if len(to_do_list) == 0:        # checks if the list is empty
         print("No task to remove!")
     else:
         print("\nYour task:")       # show all tasks in the list
